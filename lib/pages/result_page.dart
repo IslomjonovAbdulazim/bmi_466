@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import '../main.dart';
 
 class ResultPage extends StatelessWidget {
   final int main;
@@ -12,6 +15,19 @@ class ResultPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: backgroundColor,
+      appBar: AppBar(
+        backgroundColor: backgroundColor,
+        centerTitle: true,
+        title: Text(
+          "BMI Calculator",
+          style: GoogleFonts.inter(
+            color: textColor,
+            fontSize: 18,
+          ),
+        ),
+      ),
+    );
   }
 }

@@ -13,7 +13,7 @@ Color blackColor = Color(0xff060918);
 void main() {
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (_) => BMICalculator(),
     ),
   );
