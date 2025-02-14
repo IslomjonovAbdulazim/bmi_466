@@ -296,7 +296,8 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     onPressed: () {
-                      double bmi = weight / (height * height);
+                      double h = height / 100;
+                      double bmi = weight / (h * h);
                       int main = bmi.toInt();
                       int float = ((bmi - main) * 100).toInt();
                       Navigator.push(
